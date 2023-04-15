@@ -139,8 +139,12 @@ input:focus {
     color: #1c0d1f;
 }
 
+#card-img {
+    margin-top: 25px;
+}
+
 #card-img :hover {
-    transform: scale(2.2);
+    transform: scale(2.5);
     transition: all 0.3s ease-in-out;
 }
 
@@ -191,6 +195,7 @@ p {
     background-color: #d5ebec;
     border-radius: 0px 0px 10px 10px;
     padding: 0px;
+    margin-top: 35px;
 }
 
 
