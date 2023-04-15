@@ -1,10 +1,13 @@
 # PokéAPI Directory 
 
 
+<div align="center">
+
+<a href="https://pokedex-directory.netlify.app/"><img alt="pokedex-directory" title="pokedex-directory" src="https://img.shields.io/badge/-Click here to see it live-FFFF00?style=for-the-badge"/></a>
+
+</div>
 
 
-
-[See live](https://pokedex-directory.netlify.app/)
 
 
 
