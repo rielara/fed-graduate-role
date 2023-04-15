@@ -12,7 +12,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
   declarations: [
     AppComponent,
     HeaderComponent,
-    PokeListComponent
+    PokeListComponent,
   ],
   imports: [
     BrowserModule,
