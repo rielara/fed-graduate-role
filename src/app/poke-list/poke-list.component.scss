@@ -1,7 +1,7 @@
 
 .pokemon-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15%, 5fr));
     grid-gap: 16px;
     padding: 20px;
     font-family: 'Courier New', Courier, monospace;
@@ -14,37 +14,46 @@
 
 .pokemon-grid .box {
     width: 100%;
-    height: 300px;
+    height: 480px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
-    background-color: #4ee293;
+    color: #1c0d1f;
+    background-color: #93caad; 
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px;
     border-radius: 10px;
 }
 
 .pokemon-grid .box:hover {
-    background-color: #b4e03d;
+    background-color: #e5e5e0;
     color: #1c0d1f;
-    transform: scale(1.1);
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+    background-image: linear-gradient(rgba(194, 225, 19, 0.7), rgba(57, 30, 214, 0.7)), url('../../assets/img/cardbackground.jpg');
+
+    
 }
 
 pagination-controls {
-    display: grid;
+    display: flex;
     padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     justify-content: center;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
-    background-color: #2b4c64;
+    background-color: #93caad;
     color: #1c0d1f;
     text-transform: uppercase;
-    margin-top: 10px;
-    
-
-    
+    margin-top: 10px;  
 
 }
 
+
 #logo {
-    max-width: 360px;
+    max-width: 460px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,6 +122,10 @@ input:focus {
     border-radius: 5px;
 }
 
+
+
+
+
 .categories {
     display: flex;
     justify-content: center;
@@ -125,3 +138,56 @@ input:focus {
     background-color: #a3a5cd;
     color: #1c0d1f;
 }
+
+#card-img {
+    
+}
+
+h3 {
+    display: inline-block;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: #0a0b01;
+    border-radius: 10px 10px 10px 10px;
+    text-align: left;
+    
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    color: #0a0b01;
+    font-size: 20px;
+    padding: 15px;
+}
+
+#hp {
+    display: inline-block;
+    margin: 41px auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 10px 10px 10px 10px;
+    margin-right: 0;
+}
+
+#top-card {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 5px;
+    background-color: #dccdcd;
+}
+
+#card-info {
+    background-color: #d5ebec;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+

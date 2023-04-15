@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PokeListComponent } from './poke-list/poke-list.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
