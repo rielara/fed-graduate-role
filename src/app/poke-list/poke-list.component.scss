@@ -1,7 +1,7 @@
 
 .pokemon-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15%, 5fr));
+    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
     grid-gap: 16px;
     padding: 20px;
     font-family: 'Courier New', Courier, monospace;
