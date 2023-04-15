@@ -1,5 +1,15 @@
 # PokéAPI Directory 
 
+
+
+
+
+[See live](https://pokedex-directory.netlify.app/)
+
+
+
+
+
 ## Prerequisite
 This task needs to be completed using both Angular and Bootstrap (already included in package.json).  
 
