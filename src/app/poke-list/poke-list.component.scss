@@ -88,3 +88,33 @@ input:focus {
     background-color: #a3a5cd;
     color: #1c0d1f;
 }
+
+.categories .category {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: #0a0b01;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 4px;
+    background-color: #c0e80f;
+    border: 1px solid #ccc;
+    margin: 0px 5px 10px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.categories .category:hover {
+    background-color: #a3a5cd;
+    color: #1c0d1f;
+}

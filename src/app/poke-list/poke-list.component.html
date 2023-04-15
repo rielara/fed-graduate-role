@@ -5,7 +5,18 @@
   
 <input id="searchbox" type="text" placeholder="Search for a pokemon" #searchTerm/>
 <button id="searchbutton" (click)="searchBySearchTerm(searchTerm.value)">Search</button>
-  
+
+<div class="categories">
+  <span class="category" (click)="getPokemonTypeNormal()">Normal</span>
+  <span class="category" (click)="getPokemonTypeFighting()">Fighting</span>
+  <span class="category" (click)="getPokemonTypeFlying()">Flying</span>
+  <span class="category" (click)="getPokemonTypePoison()">Poison</span>
+  <span class="category" (click)="getPokemonTypeGround()">Ground</span>
+  <span class="category" (click)="getPokemonTypeRock()">Rock</span>
+  <span class="category" (click)="getPokemonTypeBug()">Bug</span>
+  <span class="category" (click)="getPokemonTypeGhost()">Ghost</span>
+
+</div>
 
 <pagination-controls (pageChange)="page = $event; pokemons = []; getPokemons()"></pagination-controls>
   <div class="pokemon-grid">

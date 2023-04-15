@@ -10,11 +10,13 @@ export class PokeListComponent implements OnInit {
   pokemons: any[] = [];
   page = 1;
   totalPokemons: number;
+  categories: any[] = [];
 
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
     this.getPokemons();
+    
 
   }
 
@@ -48,7 +50,114 @@ export class PokeListComponent implements OnInit {
           this.pokemons.push(response);
         });
     } 
-    
+  }
 
-}
+  getPokemonTypeNormal() {
+    this.dataService.getPokemonTypeNormal()
+      .subscribe((response: any) => {
+        this.pokemons = [];
+        response.pokemon.forEach(pokemon => {
+          this.dataService.getPokemon(pokemon.pokemon.name)
+            .subscribe((uniqueResponse: any) => {
+              this.pokemons.push(uniqueResponse);
+            });
+        });
+      });
+      
+
+     
+  }
+
+  getPokemonTypeFighting() {
+    this.dataService.getPokemonTypeFighting()
+      .subscribe((response: any) => {
+        this.pokemons = [];
+        response.pokemon.forEach(pokemon => {
+          this.dataService.getPokemon(pokemon.pokemon.name)
+            .subscribe((uniqueResponse: any) => {
+              this.pokemons.push(uniqueResponse);
+            });
+        });
+      });
+  }
+
+  getPokemonTypeFlying() {
+    this.dataService.getPokemonTypeFlying()
+      .subscribe((response: any) => {
+        this.pokemons = [];
+        response.pokemon.forEach(pokemon => {
+          this.dataService.getPokemon(pokemon.pokemon.name)
+            .subscribe((uniqueResponse: any) => {
+              this.pokemons.push(uniqueResponse);
+            });
+        });
+      });
+  }
+
+  getPokemonTypePoison() {
+    this.dataService.getPokemonTypePoison()
+      .subscribe((response: any) => {
+        this.pokemons = [];
+        response.pokemon.forEach(pokemon => {
+          this.dataService.getPokemon(pokemon.pokemon.name)
+            .subscribe((uniqueResponse: any) => {
+              this.pokemons.push(uniqueResponse);
+            });
+        });
+      });
+  }
+
+  getPokemonTypeGround() {
+    this.dataService.getPokemonTypeGround()
+      .subscribe((response: any) => {
+        this.pokemons = [];
+        response.pokemon.forEach(pokemon => {
+          this.dataService.getPokemon(pokemon.pokemon.name)
+            .subscribe((uniqueResponse: any) => {
+              this.pokemons.push(uniqueResponse);
+            });
+        });
+      });
+  }
+
+  getPokemonTypeRock() {
+    this.dataService.getPokemonTypeRock()
+      .subscribe((response: any) => {
+        this.pokemons = [];
+        response.pokemon.forEach(pokemon => {
+          this.dataService.getPokemon(pokemon.pokemon.name)
+            .subscribe((uniqueResponse: any) => {
+              this.pokemons.push(uniqueResponse);
+            });
+        });
+      });
+  }
+
+  getPokemonTypeBug() {
+    this.dataService.getPokemonTypeBug()
+      .subscribe((response: any) => {
+        this.pokemons = [];
+        response.pokemon.forEach(pokemon => {
+          this.dataService.getPokemon(pokemon.pokemon.name)
+            .subscribe((uniqueResponse: any) => {
+              this.pokemons.push(uniqueResponse);
+            });
+        });
+      });
+  }
+
+  getPokemonTypeGhost() {
+    this.dataService.getPokemonTypeGhost()
+      .subscribe((response: any) => {
+        this.pokemons = [];
+        response.pokemon.forEach(pokemon => {
+          this.dataService.getPokemon(pokemon.pokemon.name)
+            .subscribe((uniqueResponse: any) => {
+              this.pokemons.push(uniqueResponse);
+            });
+        });
+      });
+  }
+  
+
 }
