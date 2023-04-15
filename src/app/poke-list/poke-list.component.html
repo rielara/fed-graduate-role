@@ -18,7 +18,7 @@
 
 </div>
 
-<pagination-controls (pageChange)="page = $event; pokemons = []; getPokemons()"></pagination-controls>
+<pagination-controls (pageChange)="onPageChange($event)"></pagination-controls>
   <div class="pokemon-grid">
 
     <div class="box" *ngFor="let pokemon of pokemons | paginate: { itemsPerPage: 50, currentPage: page, totalItems: totalPokemons}">
@@ -38,7 +38,7 @@
 
 
   </div>
-  <pagination-controls (pageChange)="page = $event; pokemons = []; getPokemons()"></pagination-controls>
+  <pagination-controls (pageChange)="onPageChange($event)"></pagination-controls>
 
 
 <!--       

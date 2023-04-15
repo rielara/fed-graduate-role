@@ -23,23 +23,22 @@ export class PokeListComponent implements OnInit {
     this.getPokemons();
 
     this.activatedRoute.queryParams.subscribe((params: Params): void => {
-    this.currentPage = +params['page'] ? +params['page'] : 0;
+      this.page = +params['page'] ? +params['page'] : 0;
     });
   }
 
   onPageChange(page: number): void {
     this.page = page;
-    this.router.navigate([], {
+    this.router.navigate([], {  
       relativeTo: this.activatedRoute,
       queryParams: {
         page: page === 0 ? null : page,
       },
       queryParamsHandling: 'merge',
     });
+    this.pokemons = [];
+    this.getPokemons();
   }
-
-
-
 
   getPokemons() {
     this.dataService.getPokemons(50, this.page + 50)
